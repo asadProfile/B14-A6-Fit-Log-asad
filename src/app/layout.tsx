@@ -19,7 +19,6 @@ const oswald = Oswald({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://fitlog.vercel.app"),
   title: {
     default: "FitLog — Workout Library",
     template: "%s · FitLog",
