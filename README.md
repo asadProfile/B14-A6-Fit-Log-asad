@@ -91,6 +91,24 @@ respond, and every request is `no-store` so workout data is always live.
 
 ---
 
+## Deploying
+
+The project deploys to Vercel with zero configuration — no environment
+variables are required, because the API hosts are baked into
+`src/lib/api.ts`.
+
+1. Go to [vercel.com/new](https://vercel.com/new) and import this GitHub
+   repository.
+2. Keep the detected settings (Framework: **Next.js**, build `next build`) and
+   press **Deploy**.
+3. Every later push to `main` redeploys automatically.
+
+`/` and `/workouts/[id]` are server-rendered on demand, so a hard refresh of
+any route — including a deep link straight to a workout — works without a
+server round-trip getting confused.
+
+---
+
 ## Project Structure
 
 ```
