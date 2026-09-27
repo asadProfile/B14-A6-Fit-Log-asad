@@ -57,10 +57,10 @@ export function PlanWorkoutCard({
         />
       </div>
 
-      <div className="flex flex-wrap items-center gap-3 sm:ml-2 sm:flex-nowrap">
+      <div className="flex items-center gap-2 sm:ml-2 sm:gap-3">
         <Link
           href={`/workouts/${workout.id}`}
-          className="inline-flex items-center justify-center rounded-full border border-white/15 px-5 py-2.5 text-sm font-medium text-white transition hover:border-white/35 hover:bg-white/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/40"
+          className="inline-flex flex-1 items-center justify-center whitespace-nowrap rounded-full border border-white/15 px-4 py-2.5 text-sm font-medium text-white transition hover:border-white/35 hover:bg-white/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/40 sm:flex-none sm:px-5"
         >
           View Details
         </Link>
@@ -71,7 +71,7 @@ export function PlanWorkoutCard({
             onClick={onToggleDone}
             aria-pressed={done}
             className={cx(
-              "inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2",
+              "inline-flex flex-1 items-center justify-center gap-2 whitespace-nowrap rounded-full px-4 py-2.5 text-sm font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:flex-none sm:px-5",
               done
                 ? "border border-accent/60 bg-transparent text-accent hover:bg-accent/10 focus-visible:outline-accent"
                 : "bg-accent text-black hover:bg-accent-strong focus-visible:outline-accent",
